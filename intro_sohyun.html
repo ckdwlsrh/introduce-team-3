@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>소현 소개 페이지</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #333;
+    }
+    #intro {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #666;
+      line-height: 1.5;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 30px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>안녕하세요! 👋</h1>
+  <div id="intro">박소현입니다.</div>
+
+  <button onclick="showMore()"  id="aboutButton">About SoHyun</button>
+
+  <script>
+    function showMore() {
+      const intro = document.getElementById('intro');
+      intro.innerHTML = `
+        박소현<br>
+        GitHub:  <a href="https://github.com/S0HYUNN" target="_blank">S0HYUNN</a><br>
+        진행한 업무: 소현 페이지 제작 📸
+      `;
+      const button = document.getElementById('aboutButton');
+      button.innerHTML = 'Back';  
+      button.setAttribute('onclick', 'goBack()');  
+    }
+
+    function goBack() {
+      const intro = document.getElementById('intro');
+      intro.innerHTML = `박소현입니다.`;  
+      const button = document.getElementById('aboutButton');
+      button.innerHTML = 'About SoHyun';  
+      button.setAttribute('onclick', 'showMore()');  
+    }
+  </script>
+
+</body>
+</html>
