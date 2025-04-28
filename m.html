@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>팀원 소개</title>
     <style>
-      /* 배너 영역 */
       .header {
         position: relative;
         width: 100%;
-        height: 200px; /* 고정 높이 */
+        height: 200px;
         overflow: hidden;
       }
 
@@ -18,23 +17,22 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%; /* .header 높이에 맞춤 */
-        object-fit: cover; /* 비율 유지하며 잘라서 채움 */
-        filter: brightness(50%); /* 어둡게 처리 */
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(50%);
       }
 
       .text {
         position: absolute;
         top: 50%;
-        left: 1rem; /* 왼쪽 여백으로 이동 */
-        transform: translateY(-50%); /* 수직 중앙 정렬 */
+        left: 1rem;
+        transform: translateY(-50%);
         color: #fff;
         font-size: 1.5rem;
-        text-align: left; /* 왼쪽 정렬 */
+        text-align: left;
         padding: 0 1rem;
       }
 
-      /* 프로필 영역 */
       .main {
         padding: 2rem 1rem;
       }
@@ -48,25 +46,12 @@
         margin: 0 1rem 1rem 0;
       }
 
-      /* Bootstrap-like Primary Button */
       .btn {
-        display: inline-block;
-        font-weight: 400;
         color: #fff;
         text-align: center;
-        vertical-align: middle;
-        user-select: none;
         background-color: #0d6efd;
         border: 1px solid #0d6efd;
-        padding: 0.375rem 0.75rem;
-        font-size: 1rem;
-        line-height: 1.5;
-        border-radius: 0.375rem;
-        transition:
-          color 0.15s ease-in-out,
-          background-color 0.15s ease-in-out,
-          border-color 0.15s ease-in-out,
-          box-shadow 0.15s ease-in-out;
+        border-radius: 0.5rem;
         text-decoration: none;
         margin-top: 1rem;
       }
@@ -77,16 +62,6 @@
       .btn:focus {
         outline: 0;
         box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
-      }
-
-      /* 반응형 간격 정리 */
-      @media (max-width: 480px) {
-        .header {
-          height: 150px;
-        }
-        .text {
-          font-size: 1.2rem;
-        }
       }
     </style>
   </head>
@@ -106,10 +81,15 @@
         alt="프로필 이미지"
         class="profile"
       />
-      <p>
-        안녕하세요, 모정민입니다. 사진과 개발을 사랑하는 풀스택 엔지니어예요.
-      </p>
-      <!-- 더 알아보기 버튼 -->
+      <section>
+        <p>안녕하세요, 모정민입니다.</p>
+        <p>
+          사진만 찍다와서 개발은 어려워합니다. 다들 열정도 넘치시고,
+          열심히하셔서 존경스럽기만 합니다.
+        </p>
+        <p>배우는 자세로 항상 열심히하고, 소통하겠습니다.</p>
+        <p>감사합니다.</p>
+      </section>
       <a
         href="https://troubled-thunbergia-177.notion.site/1bc8f4d5b3f0805ea851e53e24fca94f"
         target="_blank"
