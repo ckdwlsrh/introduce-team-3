@@ -1,7 +1,7 @@
 ---
 name: Feature Request
 about: Suggest a new Feature
-title: "[Feat] 제목"
+title: "[Feat] 제목"
 labels: enhancement
 assignees: ''
 ---
