@@ -10,6 +10,9 @@
 - chore: 빌드 업무 수정, 패키지 매니저 수정
 
 ## 커밋 메시지 형식
-<타입>: <변경사항 요약>
+[타입] 변경사항 요약
+- 변경사항1
+- 변경사항2
+- issue : #번호
 
-예시: feat: Add clock component for hobby page fix: Correct typo in about page
+예시: [feat] Add clock component for hobby page [fix] Correct typo in about page
