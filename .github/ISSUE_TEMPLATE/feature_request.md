@@ -4,7 +4,6 @@ about: Suggest a new Feature
 title: "[Feat] 제목"
 labels: enhancement
 assignees: ''
-
 ---
 
 ## 개요
